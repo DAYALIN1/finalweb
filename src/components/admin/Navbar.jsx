@@ -1,0 +1,1 @@
+const Navbar = () => <nav>Admin Navbar</nav>; export default Navbar;

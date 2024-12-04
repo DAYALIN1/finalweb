@@ -1,0 +1,102 @@
+.text-options-form {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    max-height: 80vh; /* Limita la altura al 80% de la ventana */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .options-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px;
+  
+      .new-option-input {
+        flex: 1;
+  
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 14px;
+          outline: none;
+        }
+      }
+  
+      button {
+        padding: 10px 15px;
+        background-color: #f95a5a;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+  
+        &:hover {
+          background-color: #d44a4a;
+        }
+      }
+    }
+  
+    .options-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  
+      .option-card {
+        flex: 1 1 calc(50% - 20px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 15px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        .option-title {
+          font-size: 16px;
+          font-weight: bold;
+        }
+  
+        .actions {
+          display: flex;
+          gap: 10px;
+  
+          button {
+            padding: 8px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+  
+            &.edit-button {
+              background-color: #f95a5a;
+              color: #fff;
+  
+              &:hover {
+                background-color: #d44a4a;
+              }
+            }
+  
+            &.delete-button {
+              background-color: #fff;
+              color: #f95a5a;
+              border: 1px solid #f95a5a;
+  
+              &:hover {
+                background-color: #f5ecec;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

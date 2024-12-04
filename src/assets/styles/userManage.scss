@@ -1,0 +1,181 @@
+/* Contenedor principal */
+.user-management {
+    width: 98%;
+    padding: 20px;
+    background-color: #f8f9fa;
+  
+    .header {
+      position: sticky; /* Mantiene el header en la parte superior al hacer scroll */
+    top: 0; /* Fija el header en la parte superior de la página */
+    z-index: 10; /* Asegura que el header esté encima de otros elementos */
+    background-color: #f8f9fa; /* Asegura que el header tenga un fondo */
+    padding: 20px; /* Ajusta el padding para que sea consistente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra para diferenciar el header */
+  
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+  
+      .profile-icon {
+        display: flex;
+        align-items: center;
+  
+        svg {
+          width: 40px;
+          height: 40px;
+          fill: #f77;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      .tabs {
+        display: flex;
+  
+        .tab {
+          padding: 8px 15px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #f77;
+          border: 2px solid transparent;
+          border-radius: 8px;
+          cursor: pointer;
+          background-color: transparent;
+          transition: all 0.3s;
+  
+          &.active {
+            background-color: #f77;
+            color: #fff;
+            border-color: #f77;
+          }
+  
+          &:hover {
+            background-color: #fde4e4;
+            color: #f77;
+          }
+        }
+      }
+  
+      .total-members {
+        font-size: 16px;
+        font-weight: bold;
+        color: #555;
+  
+        strong {
+          color: #f77;
+        }
+      }
+    }
+  
+    .content {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Tabla general */
+  .members-table , .admins-table{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+  
+      th {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        padding: 12px;
+        background-color: #f1f1f1;
+        color: #555;
+      }
+  
+      td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+  
+      tr:hover {
+        background-color: #fdfdfd;
+      }
+    }
+  
+    /* Imagen circular */
+    .circular {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  
+    /* Botones */
+    .actions {
+      display: flex;
+      gap: 10px;
+    
+      .edit,
+      .save,
+      .cancel {
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+      }
+    
+      .edit {
+        background-color: #f95a5a;
+        color: white;
+      }
+    
+      .save {
+        background-color: #4caf50;
+        color: white;
+      }
+    
+      .cancel {
+        background-color: #f44336;
+        color: white;
+      }
+    
+      .edit:hover,
+      .save:hover,
+      .cancel:hover {
+        opacity: 0.8;
+      }
+    }
+    
+  
+    /* Estado activo/inactivo */
+    .status {
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+  
+      &.active {
+        background-color: #d4f5d4;
+        color: #2e7d32;
+      }
+  
+      &.inactive {
+        background-color: #f5d4d4;
+        color: #c62828;
+      }
+    }
+  }
+
+ 
+  

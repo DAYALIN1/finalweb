@@ -1,0 +1,143 @@
+.manage-products {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+
+  .header {
+    position: sticky; /* Mantiene el header en la parte superior al hacer scroll */
+    top: 0; /* Fija el header en la parte superior de la página */
+    z-index: 10; /* Asegura que el header esté encima de otros elementos */
+    background-color: #f8f9fa; /* Asegura que el header tenga un fondo */
+    padding: 20px; /* Ajusta el padding para que sea consistente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra para diferenciar el header */
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+
+      button {
+        padding: 10px 15px;
+        background-color: #f95a5a;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+          background-color: #d94343; /* Cambio de color al hover */
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    input {
+      border: none;
+      outline: none;
+      flex: 1;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #f95a5a;
+    }
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .product-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px); /* Efecto hover */
+      }
+
+      .product-image-container {
+        flex-shrink: 0; /* Evita que la imagen se reduzca */
+        margin-right: 20px;
+
+        .product-image {
+          width: 80px;
+          height: 80px;
+          border-radius: 8px;
+          object-fit: cover; /* Ajusta la imagen al contenedor */
+        }
+      }
+
+      .product-details {
+        flex: 1; /* Ocupa todo el espacio disponible */
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 15px; /* Espaciado entre cada detalle */
+        align-items: center; /* Centra verticalmente los detalles */
+
+        .detail {
+          font-size: 14px;
+
+          .bold {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .product-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .view-button {
+          background-color: #f95a5a;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 8px;
+          cursor: pointer;
+      
+          &:hover {
+            background-color: #d44a4a;
+          }
+        }
+
+        .delete-button {
+          background-color: white;
+          color: #f95a5a;
+          border: 1px solid #f95a5a;
+          padding: 5px 10px;
+          border-radius: 8px;
+          cursor: pointer;
+      
+          &:hover {
+            background-color: #f5ecec;
+          }
+        }
+      }
+    }
+  }
+}

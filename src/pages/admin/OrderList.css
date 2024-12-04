@@ -1,0 +1,73 @@
+.order-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F5F5FD;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+  transition: box-shadow 0.3s ease; /* Transición para un efecto más suave */
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  input {
+    border: none;
+    outline: none;
+    flex: 1;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #f95a5a;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+
+  button {
+    padding: 10px 15px;
+    background-color: #f95a5a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #d94343; /* Cambio de color al hover */
+    }
+  }
+}
+
+
+
+.order-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el mouse */
+}
+
+.order-icon {
+  font-size: 30px;
+}
+
+.order-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.order-status {
+  font-weight: bold;
+}

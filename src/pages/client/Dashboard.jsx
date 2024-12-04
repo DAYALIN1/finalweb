@@ -1,0 +1,1 @@
+const Dashboard = () => <div>Client Dashboard</div>; export default Dashboard;

@@ -1,0 +1,106 @@
+.order-card {
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinear los elementos al inicio */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  gap: 50px; /* Espaciado entre elementos */
+}
+
+.order-icon {
+  font-size: 30px;
+}
+
+.order-info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 80px; /* Espaciado entre cada bloque de información */
+  white-space: nowrap; /* Evitar que los textos se dividan en varias líneas */
+  overflow: hidden; /* Manejar contenido que se desborde */
+  text-overflow: ellipsis; /* Mostrar "..." si el texto es muy largo */
+}
+
+.order-status-container {
+  display: flex;
+  flex-direction: column; /* Colocar "Estado de la orden" arriba del selector */
+  align-items: flex-start; /* Alinear el texto y selector a la izquierda */
+  position: relative; /* Asegura que la barra quede dentro del contenedor */
+}
+
+.order-status-container::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: #FF5757; /* Color de la barra */
+  position: absolute;
+  left: -10px; /* Ajusta la posición de la barra */
+}
+
+.order-status-container label {
+  font-size: 14px; /* Tamaño más pequeño para el texto "Estado de la orden" */
+  color: #666; /* Color gris para el texto */
+  margin-bottom: 5px; /* Espaciado entre el texto y el selector */
+}
+
+.order-status select {
+  font-weight: bold;
+  color: inherit; /* Usar el color dinámico del estado */
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin bordes */
+  outline: none; /* Sin borde de enfoque */
+  font-size: 14px;
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el selector */
+}
+
+
+
+/*Nuevo*/
+
+.order-status {
+  font-weight: bold;
+  color: inherit; /* Aplica color dinámico */
+  background: transparent; /* Fondo transparente */
+  border: 1px solid #F5F5FD; /* Opcional: bordes ligeros para mejor visualización */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px 10px; /* Espaciado interno */
+  outline: none; /* Sin borde de enfoque */
+  font-size: 13px;
+  cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.order-icon img {
+  width: 50px; /* Ajusta el tamaño del ícono */
+  height: 50px;
+  object-fit: contain;
+}
+ 
+/*Para que la informacion este por debajo*/
+
+.order-info {
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
+  display: flex;
+  gap: 80px; /* Espaciado entre cada info-item */
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column; /* Asegura que el título y valor estén en columnas */
+}
+
+.info-title {
+  font-weight: bold;
+  margin-bottom: 0px; /* Espaciado entre el título y el valor */
+}
+
+.info-value {
+  color: #555; /* Puedes ajustar el color o estilo del valor */
+}
+
+
+

@@ -1,0 +1,95 @@
+/* Sidebar general */
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    color: #e53935; /* Rojo */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Categorías */
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .category-item:hover,
+  .category-item.active {
+    background-color: #e53935; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    border-color: #e53935;
+  }
+  
+  /* Buscador */
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .price-filter {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .filter-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .price-filter label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .price-filter input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .apply-button {
+    padding: 10px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .apply-button:hover {
+    background-color: #b71c1c;
+  }
+  
+  

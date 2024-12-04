@@ -1,0 +1,1 @@
+const ClientLayout = () => <div>Client Layout</div>; export default ClientLayout;

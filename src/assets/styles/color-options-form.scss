@@ -1,0 +1,74 @@
+.color-options-form {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .color-picker {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+  
+      input[type="color"] {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+  
+      input[type="text"] {
+        flex: 1;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+  
+      button {
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 8px;
+        background-color: #f95a5a;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  
+      .option-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        .color-preview {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+        }
+  
+        .actions {
+          display: flex;
+          gap: 0.5rem;
+  
+          button {
+            border: none;
+            background: none;
+            color: #f95a5a;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  

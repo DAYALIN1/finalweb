@@ -1,0 +1,285 @@
+body {
+    font-family: Jacques Francois;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+  }
+  
+  .navbar {
+    top: 100px; /* Espacio desde la parte superior */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    border-radius: 12px; /* Bordes redondeados */
+    max-width: 95%; /* Limita el ancho de la barra */
+    left: 2.5%; /* Centrar horizontalmente */
+    gap: 90px; /* Incrementa el espacio entre elementos (antes era 20px) */
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Agrega espacio debajo de la barra */
+    margin-top: 80px; /* Aumenta esta cantidad para agregar más espacio */
+    padding: 20px;
+  
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    top: 90px;
+  }
+  
+  .tab-button.active {
+    color: #000000;
+    border-bottom: 2px solid #ff5757;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+  }
+  
+  .tab-content {
+    display: none;
+    width: 80%;
+    max-width: 800px;
+    background: #FFFFFF;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .tab-content h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .tab-content p {
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .tab-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .content {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .text-box {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: justify;
+  
+  }
+  
+  .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 600px;
+  
+  }
+  
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .values-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .image-box {
+    display: flex;
+    gap: 20px;  /* Espacio entre las imágenes */
+    margin-top: 0px;
+  }
+  
+  .image-box img {
+    max-width: 100%;  /* Asegura que las imágenes no se desborden */
+    height: auto;
+    border-radius: 8px;  /* Esquinas redondeadas */
+    flex-direction: column; /* Coloca las imágenes en columna (una debajo de la otra) */
+  
+  }
+  
+  .text-box, .image-box {
+    flex: 1; /* Hace que ambos cuadros tomen el mismo tamaño */
+    min-width: 300px; /* Define un ancho mínimo para evitar que los cuadros sean demasiado pequeños */
+    flex-direction: column; /* Coloca las imágenes en columna (una debajo de la otra) */
+  }
+  
+  .image-box img {
+    justify-content: space-between; /* Coloca las imágenes en lados opuestos */
+  
+    width: 68%; /* Hace que cada imagen ocupe el 48% del ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Esquinas redondeadas */
+  
+    align-self: flex-end; /* Alinea la imagen a la derecha */
+    align-self: flex-start; /* Alinea la imagen a la izquierda */
+  
+  }
+  
+  .text-box {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo gris claro para los cuadros de texto */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para los cuadros */
+  }
+  
+  .text-box p {
+    color: #333; /* Color del texto */
+    font-size: 15px;
+  
+  }
+  
+  .image-box .image {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+  }
+  
+  .image-box .image.left {
+    justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  }
+  
+  .image-box .image.right {
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+  }
+  
+  #root {
+    margin: 0 auto;
+    padding: 2.7rem;
+  }
+  
+  .logo {
+    height: 2em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  /*Nuevo por 2*/
+  
+  /* Estilo del encabezado reducido */
+  .header {
+    position: fixed; /* Fija el header al tope de la página */
+    top: 0;
+    left: 0;
+    width: 99vw; /* Ocupa todo el ancho del viewport */
+    height: 60px; /* Ajusta la altura según lo que necesites */
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000; /* Eleva el header sobre otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e0e0e0;
+  
+  }
+  
+  
+  /* Navegación */
+  .nav-links {
+    display: flex;
+    gap: 45px;
+  
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-left: 5px; /* Mueve la navegación ligeramente hacia la derecha */
+    transform: translateX(40px); /* Desplaza todo el bloque hacia la derecha */
+  
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  
+  /* Íconos */
+  .icons-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 30px; /* Espaciado adicional entre íconos */
+  
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /*Responsive*/
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }

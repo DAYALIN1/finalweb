@@ -1,0 +1,73 @@
+// Header
+.header {
+    position: fixed; /* El header permanece fijo en la parte superior */
+    display: flex;
+    justify-content: space-between; // Alinea logo, navegación e íconos
+    align-items: center; // Centra los elementos verticalmente
+    padding: 15px 30px;
+    background-color: white; // Fondo blanco
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra para el contenedor
+    width: 98%;
+  
+    // Logo
+    .logo {
+      .logo-image {
+        width: 100px; // Tamaño más pequeño del logo
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  
+    // Enlaces de navegación
+    .nav-links {
+      display: flex;
+      gap: 20px; // Espaciado entre enlaces
+      font-size: 1rem;
+  
+      a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #e67e22; // Color naranja al pasar el mouse
+        }
+      }
+    }
+  
+    // Íconos
+    .icons {
+      display: flex;
+      gap: 15px; // Espaciado entre los íconos
+  
+      .icon {
+        font-size: 1.5rem;
+        color: #333; // Color de los íconos
+        cursor: pointer;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #e67e22; // Color naranja al pasar el mouse
+        }
+      }
+    }
+  }
+  
+  // Responsividad para pantallas pequeñas
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; // Cambia el diseño a vertical
+      align-items: center;
+  
+      .nav-links {
+        flex-direction: column; // Enlaces en una columna
+        gap: 10px;
+      }
+  
+      .logo-image {
+        width: 80px; // Reduce el tamaño del logo aún más en pantallas pequeñas
+      }
+    }
+  }
+  

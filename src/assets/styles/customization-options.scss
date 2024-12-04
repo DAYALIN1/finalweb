@@ -1,0 +1,142 @@
+.customization-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modal-content {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 700px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow-y: auto;
+    max-height: 90vh;
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .category {
+      margin-bottom: 20px;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f9fa;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+
+        .option-details {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .title {
+            font-weight: bold;
+          }
+
+          .description {
+            color: #666;
+            font-size: 14px;
+          }
+        }
+
+        .option-actions {
+          .view-button {
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #f95a5a;
+            color: #fff;
+            border: none;
+
+            &:disabled {
+              background-color: #ccc;
+              color: #666;
+              cursor: not-allowed;
+            }
+
+            &:hover:not(:disabled) {
+              background-color: #d44a4a;
+            }
+          }
+        }
+      }
+    }
+
+    .accept-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      button {
+        padding: 10px 20px;
+        background-color: #f95a5a;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #d44a4a;
+        }
+      }
+    }
+
+    .form-tab {
+      .back-button {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: #f95a5a;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &:hover {
+          color: #d44a4a;
+        }
+
+        svg {
+          font-size: 18px; /* Optional: Add an icon next to text */
+        }
+      }
+    }
+  }
+}
